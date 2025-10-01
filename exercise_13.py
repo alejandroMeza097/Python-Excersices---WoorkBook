@@ -44,7 +44,7 @@ try:
         print(f'Quantiy of quarters : {quantity_of_quarters}') 
 
 #DIMES...
-    if(remainder > DIME):
+    if(remainder >= DIME):
         quantity_of_dimes = remainder // DIME
         remainder = remainder % DIME
         print(f'Quantiy of dimes : {quantity_of_dimes}')
@@ -54,7 +54,7 @@ try:
         print(f'Quantiy of dimes : {quantity_of_dimes}')
 
 #NICKELS...
-    if(remainder > NICKEL):
+    if(remainder >= NICKEL):
         quantity_of_nickels = remainder // NICKEL
         remainder = remainder % NICKEL
         print(f'Quantiy of nickels : {quantity_of_nickels}')
@@ -64,12 +64,12 @@ try:
         print(f'Quantiy of nickels : {quantity_of_nickels}')
 
 #PENNIES
-    if(remainder > PENNY):
+    if(remainder >= PENNY):
         quantity_of_dimes = remainder
         print(f'Quantiy of pennies : {quantity_of_dimes}')
     else:
         remainder = remainder  
         print(f'Quantiy of pennies : {remainder}')
-except :
-    print("Error !")
+except Exception as e:
+    print(f"Error : {e}")
 
