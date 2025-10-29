@@ -23,7 +23,7 @@ try:
     CONSTANT_R : float = 8.314
     n_moles = (pressure_in_pascals * volume_in_m3 )/(CONSTANT_R * temperature_in_kelvin) 
     print(f"The quantity of moles in {volume_in_liters} liters is : {n_moles:.2f}")
-except:
+except ValueError:
     print("Errors when capturing data")
 
 

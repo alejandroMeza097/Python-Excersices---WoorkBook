@@ -13,7 +13,7 @@ def mpg_to_liters(miles:float)->float:
     RATE_OF_CONVERSION : float = 235.214
     return RATE_OF_CONVERSION / miles
 
-milles_per_galon : float = float(input(f'Enter the amount of MPG :'))
+milles_per_galon : float = float(input('Enter the amount of MPG :'))
 print(f'The {milles_per_galon} is equal to : {mpg_to_liters(milles_per_galon):.2f} L/100km')
 
 

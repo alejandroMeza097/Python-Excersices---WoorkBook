@@ -16,11 +16,10 @@ try:
     side_of_triangle_1 : float = float(input("Enter the length of the first side of the triangle : [u]"))
     side_of_triangle_2 : float = float(input("Enter the length of the second side of the triangle : [u]"))
     side_of_triangle_3 : float = float(input("Enter the value of the third side of the triangle : [u]"))
+    if(side_of_triangle_1 < 0 or side_of_triangle_2 < 0 or side_of_triangle_3 < 0):
+        raise ValueError
     s : float = (side_of_triangle_1 + side_of_triangle_2 + side_of_triangle_3)/2
     area_of_triangle : float = sqrt(s * (s - side_of_triangle_1 )* ( s - side_of_triangle_2) * (s- side_of_triangle_3))
     print(f"The area of the triangle is : {area_of_triangle:.2f}")
 except ValueError:
     print("Value error just ocurred")
-
-except:
-    print("General error just ocurred")
