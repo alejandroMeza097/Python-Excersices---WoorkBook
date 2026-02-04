@@ -18,4 +18,4 @@ except ValueError:
     print("No valid input")
 
 except Exception as e:
-    print("An error ocurred" + e)
+    print(f"An error ocurred : {e}")
